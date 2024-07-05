@@ -35,12 +35,12 @@ header.cabecera {
 }
 input.busqueda {
     padding: 8px 16px;
-
 }
 .lupa {
-    position: relative;
+    position:absolute;
     height: 15px;
-    left: -100px;
+    text-align: right;
+    padding-left: 150px;
 }
 img.logo {
     height: 50px;
@@ -89,6 +89,7 @@ section.banner p {
 section.productos {
     width: 100%;
     padding: 50px 50px 50px 50px;
+    overflow: hidden;
 }
 .productos_lista {
     width: 100%;
@@ -139,4 +140,154 @@ img.flechita {
     font-size: 16;
     font-weight: bold;
     color:#464646;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+}
+.pie_de_pagina {
+    width:100vw;
+    display: flex;
+    background-color: #f5f5f5;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content:space-between;
+    height: 368px;
+    padding: 64px;
+}
+
+.quienes_somos {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:24px;
+    font-weight: medium;
+    text-wrap: nowrap;
+    padding: 0px 50px;
+}
+
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 260px;
+    height: 100%;
+}
+
+.contacto p{
+    font-size: 16px;
+    font-weight: bold;
+}
+.full-input {
+    display:block; 
+    padding: 10px;
+    border-bottom: 2px solid #a2a2a2;
+    background-color: white;
+  }
+  input {
+    outline: none;
+    border: none;
+    display:block;
+    line-height: 1.2em;
+
+}
+  label {
+    display: block;
+    font-size: 12px;
+    color: #a2a2a2;
+  }
+  .boton_contacto {
+    width: 144px;
+    background-color: #2a7ae4;
+    color: white;
+    border: 0px;
+    padding: 16px;
+    height: 51px;
+    font-size: 16px;
+}
+
+.desarrollador {
+    width: 100%;
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+    height: 102px;
+    padding: 32px;
+}
+
+.login__container {
+    text-align: center;
+    background-color: white;
+    display: flex;
+    height: 500px;
+    align-items: center;
+	justify-content: center;
+	
+}
+.login__form {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    min-width: 400px;
+    min-height: 300px;
+}
+.producto__container {
+    text-align: center;
+    background-color: white;
+    display: flex;
+    height: 700px;
+    align-items: center;
+	justify-content: center;
+	
+}
+.producto__form {
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    min-width: 600px;
+    min-height: 600px;
+}
+.producto__descripcion {
+	border: none;
+	resize: none;
+	height: 6rem;
+	color: var(--preto-100, #464646);
+	font-family: "Raleway", sans-serif;
+	font-size: 1.6rem;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 2rem;
+}
+.producto__caja input {
+	border: none;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 2rem;
+    width: 400px;
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .menu {
+        height: 72px;
+        padding: 16px 32px 16px 32px;
+    }
+    .boton_login {
+        width: 166px;
+        padding: 12px;
+        height: 40px;
+    }
+    section.banner {
+        padding: 32px;
+        justify-content: end;
+    }
 }

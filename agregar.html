@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <title>AluraGeek - Admin Agregar Articulo</title>
+ </head>
+<body>
+ 
+    <header class="cabecera">
+        <div class="menu">
+            <img class="logo" src="./assets/logo.png" alt="AluraGeek Logo">
+            <input class="busqueda" type="text" placeholder="¿Qué deseas buscar?">
+            <img class="lupa" src="./assets/lupa.png" alt="">
+        </div>
+    </header>
+   
+    <main>
+        <section class="producto__container">
+            <div class="producto__caja">
+                <form class="producto__form"  data-form>
+                    <h1 class="producto__titulo">Agregar nuevo producto</h1>
+                    <div class="full-input">
+                        <label for="">Url de imagen</label>
+                        <input class="producto__imagen" type="text" placeholder="https://paginaejemplo.com/imagen.png"  required data-url>
+                    </div>
+                    <div class="full-input">
+                        <label for="">Categoría</label>
+                        <input class="producto__categoria" type="text" name="producto" required placeholder="consolas" data-category>
+                    </div>
+                    <div class="full-input">
+                        <label for="">Nombre del producto</label>
+                        <input class="producto__nombre" type="text" name="nombre" data-name>
+                    </div>
+                    <div class="full-input">
+                        <label for="precio">Precio del producto</label>
+                        <input class="producto__precio" type="text" required placeholder="$4000.00" data-price>
+                    </div>
+                    <div class="full-input">
+                        <label for="">Descripción del producto</label>
+                        <textarea class="producto__descripcion" name="description" cols="30" rows="10" data-description></textarea>
+                    </div>
+                    <input class="boton_contacto" type="submit" value="Agregar producto">
+                </form>
+            </div>
+
+        </section>
+
+
+    </main>
+ 
+
+    <footer class="pie_de_pagina">
+        <div>
+            <img class="logo" src="./assets/logo.png" alt="AluraGeek Logo">
+        </div>
+        <div class="quienes_somos">
+            <p>Quienes Somos</p>
+            <p>Politica de privacidad</p>
+            <p>Programa de fidelidad</p>
+            <p>Nuestras Tiendas</p>
+            <p>Quiero ser franquiciado</p>
+            <p>Anuncie aqui</p>
+        </div>
+        <div class="contacto">
+            <form action="">
+                <p>Hable con nosotros</p><br>
+                <div class="full-input">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" placeholder="Su nombre aqui" id="nombre">
+                </div>
+                <br>
+                <div class="full-input">
+                    <label for="nombre">Escribe tu mensaje</label>
+                    <input type="text">
+                </div>
+                <br>    
+                <button class="boton_contacto" type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+    </footer>
+    <div class="desarrollador">
+        <p>Desarrollado por Adrian Romero</p>
+        <p>2024</p>
+    </div>
+</body>
+</html>
